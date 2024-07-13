@@ -1,0 +1,24 @@
+.number {
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.button-block {
+    text-align: center;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5em;
+    background-color: hsl(214, 100%, 74%);
+    transition: background-color 0.25s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(214, 100%, 54%);
+}
