@@ -140,6 +140,9 @@ function stopTimer() {
 submitBtn.addEventListener('click', () => {
     stopTimer();
     showScore();
+    score = 0;
+    startTime = 0;
+    endTime = 0;
 });
 
 loadQuestions();
