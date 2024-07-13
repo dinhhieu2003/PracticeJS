@@ -49,6 +49,7 @@ let countdown = null;
 let startTime = 0;
 let endTime = 0;
 let timeTaken = 0;
+let isSubmitted = false;
 
 const timerElement = document.getElementById('timer');
 const questionsElement = document.getElementById('questions');
@@ -138,11 +139,11 @@ function stopTimer() {
 }
 
 submitBtn.addEventListener('click', () => {
-    stopTimer();
-    showScore();
-    score = 0;
-    startTime = 0;
-    endTime = 0;
+    if(!isSubmitted) {
+        stopTimer();
+        showScore();
+        isSubmitted = true;
+    } 
 });
 
 loadQuestions();
